@@ -282,15 +282,15 @@ nav a:hover {
 }
 @media screen and (max-width: 500px) {
   body {
-    margin: 0;
+    margin: 0%;
   }
   .navbar {
     display: flex;
-    flex-flow: column wrap;
+    flex-direction: column;
     height: auto;
     margin: auto;
   }
-  a {
+  .navbar a {
     width: 100%;
     height: auto;
     display: flex;
@@ -298,5 +298,33 @@ nav a:hover {
     align-items: center;
     align-content: center;
     margin: 0;
+  }
+  .top-content .intro {
+    text-align: center;
+  }
+  .middle-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .middle-content .skills {
+    margin-top: 10px;
+  }
+  .middle-content .bio,
+  .middle-content .skills {
+    width: 100%;
+  }
+  .middle-content .bio h2,
+  .middle-content .skills h2,
+  .middle-content .bio h3,
+  .middle-content .skills h3 {
+    text-align: center;
+  }
+  .history {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  .history h3 {
+    text-align: center;
   }
 }
